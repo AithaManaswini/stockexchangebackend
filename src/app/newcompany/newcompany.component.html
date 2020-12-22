@@ -1,0 +1,109 @@
+<html>
+    <body>
+
+        
+        <form>
+            
+            
+            <br>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="cname">Company Name</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="cname" type="text" [(ngModel)]="Company.name" [ngModelOptions]="{standalone: true}"> 
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group">
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="ceoname">CEO name</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="ceoname" type="text" [(ngModel)]="Company.ceo" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group">
+                
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="turnover">Turnover</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="turnover" type="number" [(ngModel)]="Company.turnover" [ngModelOptions]="{standalone: true}">
+
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="form-group">
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="sector">Sector</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="sector"  type="text" [(ngModel)]="Company.sector" [ngModelOptions]="{standalone: true}">
+
+
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group">
+                
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="brief">Brief description</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="brief"  type="text" [(ngModel)]="Company.brief" [ngModelOptions]="{standalone: true}">
+
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group">
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="date">IPO date</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="date"  type="text">
+
+
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group">
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="date">Stock Code</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="date"  type="text" [(ngModel)]="Company.stockcode" [ngModelOptions]="{standalone: true}">
+
+
+                    </div>
+                </div>
+               
+            </div>
+
+            <button type="submit" (click)="addcompany()" class="btn btn-success">Submit</button>
+        </form>
+        
+            
+    </body>
+</html>

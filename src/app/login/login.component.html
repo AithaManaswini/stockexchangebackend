@@ -1,0 +1,48 @@
+<div class="container">
+    <!-- <div>
+      User Name : <input type="text" name="username" [(ngModel)]="username">
+      Password : <input type="password" name="password" [(ngModel)]="password">
+    </div>
+    <button (click)=checkLogin() class="btn btn-success">
+      Login
+    </button> -->
+    <form>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="cname">UserName</label>
+                </div>
+                <div class="col-sm-7">
+                    <input  class="form-control" id="cname" type="text" name="username" [(ngModel)]="username" > 
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="cname">Password</label>
+                </div>
+                <div class="col-sm-7">
+                    <input  class="form-control" id="cpw" type="password" name="password" [(ngModel)]="password" > 
+                </div>
+            </div>
+           
+        </div>
+        <button type="button" id="but" class="btn btn-success"(click)="checkLogin()">
+            <a routerLink="/afterlogin">Login</a>
+            
+        </button>
+        
+        <!-- <button type="button" id="but2" class="btn btn-success">
+            <a routerLink="/signup">SIGNUP</a>
+            
+        </button> -->
+    </form>
+    <script>
+        
+            document. getElementById("but"). onclick = function () {
+            location. href = "/afterlogin";
+            }
+        
+    </script>
+  </div>

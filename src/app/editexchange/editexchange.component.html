@@ -1,0 +1,56 @@
+<html>
+    <body>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><h2>Stock Exchanges list</h2></div>
+            <div class="col-sm-4"></div>
+            
+        </div>
+        <div class="row">
+            
+            <div class="col-sm-10">
+                <div class="tbl">
+                <table class="table-striped center table">
+                    <thead>
+                        <tr>
+                            <th >Name</th>
+                            <th>Brief </th>
+                            <th>Contact</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let e of se">
+                            <td >
+                                
+                                {{e.stockexchange}}
+                                
+                            </td>
+                            <td >
+                                
+                                {{e.brief}}
+                            
+                            </td>
+                            <td >
+                                
+                                {{e.contact}}
+                            
+                            </td>
+                            <td >
+                                
+                                {{e.remarks}}
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+
+    </div>
+        <br>
+        
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<html>
+    <body>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4"><h2>Stock Exchanges list</h2></div>
+            <div class="col-sm-4"></div>
+            
+        </div>
+        <div class="row">
+            
+            <div class="col-sm-10">
+                <div class="tbl">
+                <table class="table-striped center table">
+                    <thead>
+                        <tr>
+                            <th >Company Name</th>
+                            <th>Stock Exchange </th>
+                            <th>Price</th>
+                            <th>TotalShares</th>
+                            <th>Open date and time</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let e of ipo">
+                            <td >
+                                
+                                {{e.companyname}}
+                                
+                            </td>
+                            <td >
+                                
+                                {{e.stockexchange}}
+                            
+                            </td>
+                            <td >
+                                
+                                {{e.pricepershare}}
+                            
+                            </td>
+                            <td >
+                                
+                                {{e.totalnoofshares}}
+                            </td>
+                            
+                            <td >
+                                
+                                {{e.opendatetime}}
+                            </td>
+                            <td >
+                                
+                                {{e. remarks}}
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <div class="col-sm-2"></div>
+
+    </div>
+        <br>
+        
+    </body>
+</html>

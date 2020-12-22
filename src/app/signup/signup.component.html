@@ -1,0 +1,72 @@
+<html>
+    <body>
+
+        
+        <form>
+            
+            
+            <br>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="cname">User Name</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="cname" type="text" [(ngModel)]="User.username" [ngModelOptions]="{standalone: true}"> 
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group">
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="ceoname">Email</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="ceoname" type="text" [(ngModel)]="User.email" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group">
+                
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="turnover">Mobileno</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="turnover" type="number" [(ngModel)]="User.mobile" [ngModelOptions]="{standalone: true}">
+
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="form-group">
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="sector">Password</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="sector"  type="text" [(ngModel)]="User.password" [ngModelOptions]="{standalone: true}">
+
+
+                    </div>
+                </div>
+               
+            </div>
+            
+
+            <button type="submit" (click)="sign()" class="btn btn-success">Submit</button>
+
+            
+        </form>
+        
+            
+    </body>
+</html>
+
+

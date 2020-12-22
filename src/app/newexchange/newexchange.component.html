@@ -1,0 +1,69 @@
+<html>
+    <body>
+
+        
+        <form>
+            
+            
+            <br>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="cname">Stock Exchange Name</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="cname" type="text" [(ngModel)]="stockexchange.stockexchange" [ngModelOptions]="{standalone: true}"> 
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group">
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="ceoname">Brief</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="ceoname" type="text" [(ngModel)]="stockexchange.brief" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+               
+            </div>
+            <div class="form-group">
+                
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="turnover">Contact</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="turnover" type="number" [(ngModel)]="stockexchange.contact" [ngModelOptions]="{standalone: true}">
+
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="form-group">
+                
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label for="sector">Remarks</label>
+                    </div>
+                    <div class="col-sm-7">
+                        <input  class="form-control" id="sector"  type="text" [(ngModel)]="stockexchange.remarks" [ngModelOptions]="{standalone: true}">
+
+
+                    </div>
+                </div>
+               
+            </div>
+            
+
+            <button type="submit" (click)="addstockexchange()" class="btn btn-success">Submit</button>
+        </form>
+        
+            
+    </body>
+</html>
+
